@@ -1,0 +1,47 @@
+{
+  "node_id": "mycosoft-uglybox-001",
+  "i2c": {
+    "sda": 5,
+    "scl": 4,
+    "hz": 100000
+  },
+  "fmt": "ndjson",
+  "json_pretty": 0,
+  "live_ms": 2000,
+  "rates": {
+    "amb": "lp",
+    "env": "lp"
+  },
+  "thresholds": {
+    "iaq": {
+      "warn": 120,
+      "crit": 200
+    },
+    "co2": {
+      "warn": 1200,
+      "crit": 2000
+    },
+    "voc": {
+      "warn": 1.0,
+      "crit": 2.0
+    },
+    "temp": {
+      "warn": 30,
+      "crit": 35
+    },
+    "rh": {
+      "warn": 70,
+      "crit": 85
+    }
+  },
+  "led": {
+    "mode": "state",
+    "bright": 32,
+    "rgb": [
+      0,
+      0,
+      80
+    ]
+  },
+  "sound": 1
+}
